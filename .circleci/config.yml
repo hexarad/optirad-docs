@@ -1,14 +1,12 @@
 version: 2.1
 
+orbs:
+  aws-cli: circleci/aws-cli@3.1
+
 jobs:
-  tests:
+  build:
     docker:
       - image: cimg/ruby:3.2.2-browsers
-        environment:
-          aws-access-key-id: OPTIRAD_AWS_ACCESS_KEY
-          aws-secret-access-key: OPTIRAD_AWS_ACCESS_SECRET
-          aws-region: OPTIRAD_AWS_REGION_NAME
-          aws-s3-bucket-name: optirad-docs
     steps:
       - checkout
 
@@ -28,6 +26,34 @@ jobs:
           paths:
             - vendor/bundle
 
+      - persist_to_workspace:
+          root: workspace
+          paths:
+            - _site
+  push:
+    docker:
+      - image: cimg/ruby:3.2.2-browsers
+        environment:
+          aws-s3-bucket-name: optirad-docs
+    steps:
+      - attach_workspace:
+          at: /tmp/workspace
+          paths:
+            - _site
+
+      - aws-cli/setup:
+          aws-access-key-id: OPTIRAD_AWS_ACCESS_KEY
+          aws-secret-access-key: OPTIRAD_AWS_ACCESS_SECRET
+          aws-region: OPTIRAD_AWS_REGION_NAME
+
       - run:
           name: "Deploy to AWS S3"
-          command: aws s3 sync ./_site/ s3://${{ secrets.AWS_S3_BUCKET_NAME }} --acl public-read --delete --cache-control max-age=604800
+          command: aws s3 sync /tmp/workspace/_site/ s3://${{ secrets.AWS_S3_BUCKET_NAME }} --acl public-read --delete --cache-control max-age=604800
+
+workflows:
+  build_and_push:
+    jobs:
+      - build
+      - push:
+          requires:
+            - build
