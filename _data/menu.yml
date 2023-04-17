@@ -1,0 +1,33 @@
+toc2:
+  - title: Getting started
+    subfolderitems:
+      - page: Your invite email
+        url: /admin-invite-email.html
+        subsubfolderitems:
+          - page: Subthing 2
+            url: /subthing1.html
+          - page: Setting a password
+            url: /setting-a-password.html
+  - title: Reporters
+    subfolderitems:
+      - page: Adding a reporter
+        url: /adding-a-reporter.html
+      - page: Adding a Job Plan
+        url: /adding-a-job-plan.html
+        subsubfolderitems:
+          - page: Subpiece 1
+            url: /subpiece1.html
+          - page: Subpiece2
+            url: /subpiece2.html
+  - title: Roster
+    subfolderitems:
+      - page: Getting to know the roster
+        url: /getting-to-know-the-roster.html
+      - page: Filtering the roster
+        url: /filtering-to-roster.html
+        subsubfolderitems:
+          - page: Start and end dates
+            url: /roster-filter-start-and-end.html
+          - page: Work sessions
+            url: /roster-filter-work-sessions.html
+
