@@ -47,7 +47,7 @@ jobs:
 
       - run:
           name: Deploy to AWS S3
-          command: aws s3 sync /tmp/workspace/_site/ s3://$S3_BUCKET --acl public-read --delete --cache-control max-age=604800
+          command: aws s3 sync /tmp/workspace/_site/ s3://$S3_BUCKET --acl public-read --delete --cache-control max-age=604800 --acl bucket-owner-full-control
 
 workflows:
   build_and_push:
