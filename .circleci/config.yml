@@ -1,0 +1,33 @@
+version: 2.1
+
+jobs:
+  tests:
+    docker:
+      - image: cimg/ruby:3.2.2-browsers
+        environment:
+          aws-access-key-id: OPTIRAD_AWS_ACCESS_KEY
+          aws-secret-access-key: OPTIRAD_AWS_ACCESS_SECRET
+          aws-region: OPTIRAD_AWS_REGION_NAME
+          aws-s3-bucket-name: optirad-docs
+    steps:
+      - checkout
+
+      - restore_cache:
+          key: optirad-docs-{{ checksum "Gemfile.lock" }}
+
+      - run:
+          name: Bundle install dependencies
+          command: bundle config set --local path vendor/bundle && bundle install
+
+      - run:
+          name: Build the Jekyll site
+          command: bundle exec jekyll build
+
+      - save_cache:
+          key: optirad-docs-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+
+      - run:
+          name: "Deploy to AWS S3"
+          command: aws s3 sync ./_site/ s3://${{ secrets.AWS_S3_BUCKET_NAME }} --acl public-read --delete --cache-control max-age=604800
