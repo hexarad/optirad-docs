@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Menu
-permalink: /menu/
 ---
 
-Below you will find a structured list of links to help you navigate the available
-documentation:
+Welcome to the Optirad document site. Here you will find structured links to help
+navigate you to the documentation you require.
+
+Alternatively you can view the most recent documentation [here]({% link recent.md %})
 
 <div>
 {% if site.data.menu.toc2[0] %}

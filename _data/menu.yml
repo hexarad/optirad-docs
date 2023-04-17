@@ -2,7 +2,7 @@ toc2:
   - title: Getting started
     subfolderitems:
       - page: Your invite email
-        url: /admin-invite-email.html
+        url: docs/admin-invite-email.html
         subsubfolderitems:
           - page: Subthing 2
             url: /subthing1.html

@@ -6,9 +6,11 @@ Here is the source for the Optirad Documentation site:
 Usage
 -----
 
-If you just want to publish some documentation do the following
+If you just want to publish some documentation you’ll find `.md` files in the `_docs` directory.
+Go ahead and add or edit the files, when you are finished the documentation site can
+auto-regenerates the site when required.
 
-1. Add a file to the `./_posts/` directory
+1. Add a file to the `./_docs/` directory
 
 ```
 ---

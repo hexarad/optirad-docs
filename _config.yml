@@ -1,13 +1,23 @@
 title: Optirad Documentation
 email: opitrad-support@hexarad.com
 description: >-
-  Opitrad streamlines the scheduling of rediology departments
-  taking into account each organisations requirements. Therefore
-  a number of features require documentation, that documentionation
-  lives here.
+  Opitrad, helping rediology departments put patients first.
 baseurl: "" # e.g. /blog
 url: "" # e.g. http://example.com
+collections:
+  docs:
+    output: true
+
+plugins:
+ - jekyll-remote-theme
+remote_theme: jekyll/minima
 theme: minima
-
-
-
+show_excerpts: true
+sass:
+  quiet_deps: true
+defaults:
+  - scope:
+      path: "_docs"
+    values:
+      layout: post
+      permalink: /docs/:title:output_ext
