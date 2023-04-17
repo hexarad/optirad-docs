@@ -7,12 +7,6 @@ url: "" # e.g. http://example.com
 collections:
   docs:
     output: true
-
-plugins:
- - jekyll-remote-theme
-remote_theme: jekyll/minima
-theme: minima
-show_excerpts: true
 sass:
   quiet_deps: true
 defaults:
@@ -21,3 +15,12 @@ defaults:
     values:
       layout: post
       permalink: /docs/:title:output_ext
+
+plugins:
+ - jekyll-remote-theme
+remote_theme: jekyll/minima
+theme: minima
+show_excerpts: true
+author:
+  name: Optirad Support
+  email: optirad-support@hexarad.com
