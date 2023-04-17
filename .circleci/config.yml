@@ -31,10 +31,9 @@ jobs:
           paths:
             - _site
   push:
-    docker:
-      - image: cimg/ruby:3.2.2-browsers
-        environment:
-          S3_BUCKET: optirad-docs
+    executor: aws-cli/default
+      environment:
+        S3_BUCKET: optirad-docs
     steps:
       - attach_workspace:
           at: /tmp/workspace
