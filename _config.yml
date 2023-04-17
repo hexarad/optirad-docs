@@ -5,7 +5,7 @@ description: >-
   taking into account each organisations requirements. Therefore
   a number of features require documentation, that documentionation
   lives here.
-baseurl: "/docs" # e.g. /blog
+baseurl: "" # e.g. /blog
 url: "" # e.g. http://example.com
 theme: minima
 
