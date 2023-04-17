@@ -32,8 +32,6 @@ jobs:
             - _site
   push:
     executor: aws-cli/default
-      environment:
-        S3_BUCKET: optirad-docs
     steps:
       - attach_workspace:
           at: /tmp/workspace
@@ -47,7 +45,7 @@ jobs:
 
       - run:
           name: Deploy to AWS S3
-          command: aws s3 sync /tmp/workspace/_site/ s3://$S3_BUCKET --acl public-read --delete --cache-control max-age=604800 --acl bucket-owner-full-control
+          command: aws s3 sync /tmp/workspace/_site/ s3://optirad-docs --acl public-read --delete --cache-control max-age=604800
 
 workflows:
   build_and_push:
