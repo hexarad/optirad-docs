@@ -34,7 +34,7 @@ jobs:
     docker:
       - image: cimg/ruby:3.2.2-browsers
         environment:
-          optirad-s3-bucket: optirad-docs
+          S3_BUCKET: optirad-docs
     steps:
       - attach_workspace:
           at: /tmp/workspace
@@ -48,7 +48,7 @@ jobs:
 
       - run:
           name: Deploy to AWS S3
-          command: aws s3 sync /tmp/workspace/_site/ s3://$OPTIRAD_S3_BUCKET --acl public-read --delete --cache-control max-age=604800
+          command: aws s3 sync /tmp/workspace/_site/ s3://$S3_BUCKET --acl public-read --delete --cache-control max-age=604800
 
 workflows:
   build_and_push:
