@@ -27,7 +27,7 @@ jobs:
             - vendor/bundle
 
       - persist_to_workspace:
-          root: workspace
+          root: .
           paths:
             - _site
   push:
