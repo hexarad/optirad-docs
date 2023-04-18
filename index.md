@@ -2,7 +2,7 @@
 layout: page
 ---
 
-<img src="{{site.baseurl}}/assets/images/hr-logo.jpg" style="height:60px;display: block; margin-left: auto; margin-right: auto; " >
+<img src="{{site.baseurl}}/assets/images/hr-logo.png" style="height:60px;display: block; margin-left: auto; margin-right: auto; " >
 
 Welcome to the Optirad document site. Here you will find structured links to help
 navigate you to the documentation you require.
