@@ -9,36 +9,15 @@ navigate you to the documentation you require.
 
 Alternatively you can view the most recent documentation [here]({% link recent.md %})
 
-{% assign CATEGORIES = "" | split: ',' %}
-{% for s in docs %}
-    {% assign CATEGORIES = CATEGORIES | push: s.category | uniq %}
-{% endfor %}
-{% for cat in CATEGORIES %}
-  {% assign local_list = docs | where: "category", cat %}
-  {% for i in local_list %}
-    {{ i.title }} - {{ site.baseurl }}{{ i.url }}
-  {% endfor %}
-{% endfor %}
-
+{% assign CATEGORIES = site.categories | sort:"order" %}
 <div>
-{% if site.data.menu.nav[0] %}
-  {% for item in site.data.menu.nav %}
-    <h3>{{ item.title }}</h3>
-      {% if item.subfolderitems[0] %}
-        <ul>
-          {% for entry in item.subfolderitems %}
-              <li><a href="{{ entry.url }}">{{ entry.page }}</a>
-                {% if entry.subsubfolderitems[0] %}
-                  <ul>
-                  {% for subentry in entry.subsubfolderitems %}
-                      <li><a href="{{ subentry.url }}">{{ subentry.page }}</a></li>
-                  {% endfor %}
-                  </ul>
-                {% endif %}
-              </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    {% endfor %}
-{% endif %}
+{% for cat in CATEGORIES %}
+  {% assign local_list = site.docs | where: "category", cat.category_name %}
+  <h3>{{ cat.category_name }}</h3>
+  <ul>
+  {% for doc in local_list %}
+    <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+  {% endfor %}
+  </ul>
+{% endfor %}
 </div>

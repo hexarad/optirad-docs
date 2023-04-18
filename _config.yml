@@ -9,6 +9,9 @@ include:
 collections:
   docs:
     output: true
+    relative_directory: _docs/
+  categories:
+    relative_directory: _categories/
 sass:
   sass_dir: _sass
   quiet_deps: true

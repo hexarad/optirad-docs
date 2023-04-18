@@ -32,14 +32,14 @@ collections:
         collection: "categories"
         searchFields: ["category_name"]
         valueField: "category_name"
-        multiple: true
+        multiple: false
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
 
   - name: categories
     label: Categories
-    folder: data/categories/
+    folder: _categories/
     create: true
-    slug: '{{title}}'
+    slug: '{{category_name}}'
     identifier_field: category_name
     fields:
       - {label: Name, name: category_name, widget: string}
