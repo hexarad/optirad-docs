@@ -3,6 +3,7 @@ backend:
   branch: main
 
 media_folder: "assets/images/uploads"
+publish_mode: editorial_workflow
 
 collections:
   - name: 'docs'
@@ -18,14 +19,9 @@ collections:
       - label: Year
         field: date
         pattern: \d{4}
-      - label: Drafts
-        field: draft
-    fields: # The fields each document in this collection have
+    fields:
       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
-      - {
-          label: 'Publish Date',
-          name: 'date',
-          widget: 'datetime',
+      - { label: 'Date', name: 'date', widget: 'datetime',
           date_format: 'YYYY-MM-DD',
           time_format: 'HH:mm',
           format: 'YYYY-MM-DD HH:mm',

@@ -50,7 +50,11 @@ jobs:
 workflows:
   build_and_push:
     jobs:
-      - build
+      - build:
+          filters:
+            branches:
+              only:
+                - main
       - push:
           requires:
             - build
