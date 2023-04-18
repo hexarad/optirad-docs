@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  Your invitation email
-date:   2023-04-17
+title: Your invitation email
+date: 2023-04-17
 ---
-If you received an email from Opitrad inviting you to the system and you are expecting this email, welcome, otherwise, consult your manager.
+If you received an email from Opitrad inviting you to the system and you are expecting this email, **welcome**, otherwise, consult your manager.
 
 You have been sent an link which you can follow to https://optirad.hexarad.com/ domain where you set your password.
 
