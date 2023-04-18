@@ -8,6 +8,7 @@ collections:
   docs:
     output: true
 sass:
+  sass_dir: _sass
   quiet_deps: true
 defaults:
   - scope:
