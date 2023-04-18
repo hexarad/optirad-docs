@@ -4,6 +4,8 @@ description: >-
   Opitrad, helping rediology departments put patients first.
 baseurl: "" # e.g. /blog
 url: "" # e.g. http://example.com
+include:
+  - .netlify
 collections:
   docs:
     output: true
