@@ -1,15 +1,11 @@
 backend:
   name: git-gateway
-  branch: master
-  identity_url: "https://optirad-docs.s3-website.eu-west-2.amazonaws.com/.netlify/identity"
-  gateway_url: "https://optirad-docs.s3-website.eu-west-2.amazonaws.com/.netlify/git"
+  branch: main
   squash_merges: true
 
 publish_mode: editorial_workflow
 media_folder: "assets/images"
 
-site_url: http://optirad-docs.s3-website.eu-west-2.amazonaws.com/
-logo_url: http://optirad-docs.s3-website.eu-west-2.amazonaws.com/assets/images/hr-logo.png
 
 collections: # A list of collections the CMS should be able to edit
   - name: 'docs' # Used in routes, ie.: /admin/collections/:slug/edit

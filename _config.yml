@@ -5,7 +5,7 @@ description: >-
 baseurl: "" # e.g. /blog
 url: "" # e.g. http://example.com
 include:
-  - .netlify
+  - admin
 collections:
   docs:
     output: true
