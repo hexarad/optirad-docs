@@ -9,6 +9,17 @@ navigate you to the documentation you require.
 
 Alternatively you can view the most recent documentation [here]({% link recent.md %})
 
+{% assign CATEGORIES = "" | split: ',' %}
+{% for s in docs %}
+    {% assign CATEGORIES = CATEGORIES | push: s.category | uniq %}
+{% endfor %}
+{% for cat in CATEGORIES %}
+  {% assign local_list = docs | where: "category", cat %}
+  {% for i in local_list %}
+    {{ i.title }} - {{ site.baseurl }}{{ i.url }}
+  {% endfor %}
+{% endfor %}
+
 <div>
 {% if site.data.menu.nav[0] %}
   {% for item in site.data.menu.nav %}

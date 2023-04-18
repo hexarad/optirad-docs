@@ -26,4 +26,20 @@ collections:
           time_format: 'HH:mm',
           format: 'YYYY-MM-DD HH:mm',
         }
+      - label: "Category"
+        name: "category"
+        widget: "relation"
+        collection: "categories"
+        searchFields: ["category_name"]
+        valueField: "category_name"
+        multiple: true
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
+
+  - name: categories
+    label: Categories
+    folder: data/categories/
+    create: true
+    slug: '{{title}}'
+    identifier_field: category_name
+    fields:
+      - {label: Name, name: category_name, widget: string}
