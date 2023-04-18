@@ -2,8 +2,7 @@
 layout: post
 title: Your invitation email
 date: 2023-04-17
-category:
-  - Reporters
+category: Reporters
 ---
 If you received an email from Opitrad inviting you to the system and you are expecting this email, **welcome**, otherwise, consult your manager.
 
