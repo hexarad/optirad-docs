@@ -42,4 +42,5 @@ collections:
     slug: '{{category_name}}'
     identifier_field: category_name
     fields:
-      - {label: Name, name: category_name, widget: string}
+      - { label: Name, name: category_name, widget: string }
+      - { label: Order, name: order, widget: "number", value_type: "int", min: 0, step: 1, default: 100 }
