@@ -19,6 +19,8 @@ collections:
       - label: Year
         field: date
         pattern: \d{4}
+      - label: Category
+        field: string
     sortable_fields:
       - category
       - title
@@ -50,6 +52,7 @@ collections:
     identifier_field: category_name
     sortable_fields:
       - order
+      - category_name
     fields:
       - { label: Name, name: category_name, widget: string }
       - { label: Order, name: order, widget: "number", value_type: "int", min: 0, step: 1, default: 100 }
