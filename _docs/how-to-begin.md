@@ -1,8 +1,7 @@
 ---
-layout: post
 title: How to begin
-date: 2023-04-19 15:07
-category: Getting Started
+date: 2023-04-18 16:38
+category: Roster
 ---
 # Enter your reporter details
 
