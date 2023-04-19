@@ -1,6 +1,5 @@
 ---
 title: Introduction
-date: 2023-04-19 13:00
 category: Reporters
 ---
 # Reporters

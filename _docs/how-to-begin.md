@@ -1,6 +1,5 @@
 ---
 title: How to begin
-date: 2023-04-18 16:38
 category: Getting Started
 ---
 # Enter your reporter details
