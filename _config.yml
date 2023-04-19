@@ -2,7 +2,7 @@ title: Optirad Documentation
 email: opitrad-support@hexarad.com
 description: >-
   Opitrad, helping rediology departments put patients first.
-baseurl: "" # e.g. /blog
+baseurl: "/docs" # e.g. /blog
 url: "" # e.g. http://example.com
 include:
   - admin

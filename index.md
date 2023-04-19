@@ -16,7 +16,7 @@ Alternatively you can view the most recent documentation [here]({% link recent.m
   <h3>{{ cat.category_name }}</h3>
   <ul>
   {% for doc in local_list %}
-    <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+    <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
   {% endfor %}
   </ul>
 {% endfor %}

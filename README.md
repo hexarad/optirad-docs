@@ -14,7 +14,6 @@ auto-regenerates the site when required.
 
 ```
 ---
-layout: post
 title:  Some title
 date:   2023-04-17 11:19
 ---
@@ -33,6 +32,14 @@ or
 
 2. Save the file
 
+
+Netlify
+-------
+
+This site is configured to allow the generation of pages via the Netlify CMS.
+
+See: https://optirad-docs.netlify.app/
+And: https://app.netlify.com/sites/optirad-docs/overview
 
 Development
 -----------
