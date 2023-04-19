@@ -10,7 +10,8 @@ collections:
     label: 'Docs' # Used in the UI
     label_singular: 'Doc' # Used in the UI, ie: "New Post"
     description: >
-      A page of documentation
+      A page of documentation that is listed under the chosen category
+      and is becomes a its own page and url.
     folder: '_docs'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
@@ -19,6 +20,10 @@ collections:
       - label: Year
         field: date
         pattern: \d{4}
+    sortable_fields:
+      - category
+      - title
+      - date
     fields:
       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
       - { label: 'Date', name: 'date', widget: 'datetime',
@@ -37,10 +42,15 @@ collections:
 
   - name: categories
     label: Categories
+    label_singular: Category
+    description: >
+      A category is shown as a heading within the documentation and is used to group
+      links to the documents.
     folder: _categories/
     create: true
-    slug: '{{category_name}}'
     identifier_field: category_name
+    sortable_fields:
+      - order
     fields:
       - { label: Name, name: category_name, widget: string }
       - { label: Order, name: order, widget: "number", value_type: "int", min: 0, step: 1, default: 100 }
