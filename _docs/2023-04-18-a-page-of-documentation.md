@@ -1,12 +1,6 @@
 ---
-title: a page of documentation
+title: Your inviation email
 date: 2023-04-18 16:40
 category: Getting Started
 ---
-H﻿ello
-
-H﻿ere is a page of documentation
-
-
-
-![](/assets/images/uploads/midjourney-litte-lost-blue-hexagon.jpg)
+So you have been invited to join the Opirad application, **welcome**!
