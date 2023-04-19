@@ -2,6 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
+#publish_mode: editorial_workflow
 media_folder: "assets/images/uploads"
 
 collections:
@@ -18,16 +19,28 @@ collections:
       - label: Year
         field: date
         pattern: \d{4}
-      - label: Drafts
-        field: draft
-    fields: # The fields each document in this collection have
+    fields:
       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
-      - {
-          label: 'Publish Date',
-          name: 'date',
-          widget: 'datetime',
+      - { label: 'Date', name: 'date', widget: 'datetime',
           date_format: 'YYYY-MM-DD',
           time_format: 'HH:mm',
           format: 'YYYY-MM-DD HH:mm',
         }
+      - label: "Category"
+        name: "category"
+        widget: "relation"
+        collection: "categories"
+        searchFields: ["category_name"]
+        valueField: "category_name"
+        multiple: false
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
+
+  - name: categories
+    label: Categories
+    folder: _categories/
+    create: true
+    slug: '{{category_name}}'
+    identifier_field: category_name
+    fields:
+      - { label: Name, name: category_name, widget: string }
+      - { label: Order, name: order, widget: "number", value_type: "int", min: 0, step: 1, default: 100 }
