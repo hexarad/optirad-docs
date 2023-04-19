@@ -1,4 +1,5 @@
 ---
+layout: post
 title: How to begin
 date: 2023-04-19 15:07
 category: Getting Started
