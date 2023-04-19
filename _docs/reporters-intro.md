@@ -1,6 +1,6 @@
 ---
-title: reporters intro
-date: 2023-04-19 15:31
+title: Introduction
+date: 2023-04-19 16:00
 category: Getting Started
 ---
 # R﻿eporters
