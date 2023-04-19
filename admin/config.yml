@@ -11,10 +11,9 @@ collections:
     label_singular: 'Doc' # Used in the UI, ie: "New Post"
     description: >
       A page of documentation that is listed under the chosen category
-      and is becomes a its own page and url.
+      and becomes its own page and url which can be linked to.
     folder: '_docs'
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
+    summary: '{{title}} -- {{year}}/{{month}}/{{day}} -- {{category}}'
     create: true # Allow users to create new documents in this collection
     view_groups:
       - label: Year
