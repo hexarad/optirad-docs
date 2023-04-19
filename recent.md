@@ -22,7 +22,7 @@ show_excerpts: true
       <li>
         <span class="post-meta">{{ doc.date | date: date_format }}</span>
         <h3>
-          <a class="post-link" href="{{ doc.url | relative_url }}">
+          <a class="post-link" href="{{ site.url }}{{ doc.url | relative_url }}">
             {{ doc.title | escape }}
           </a>
         </h3>
@@ -37,13 +37,13 @@ show_excerpts: true
       <div class="pager">
         <ul class="pagination">
         {%- if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
+          <li><a href="{{ site.url }}{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
         {%- else %}
           <li><div class="pager-edge">•</div></li>
         {%- endif %}
           <li><div class="current-page">{{ paginator.page }}</div></li>
         {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
+          <li><a href="{{ site.url }}{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
         {%- else %}
           <li><div class="pager-edge">•</div></li>
         {%- endif %}
