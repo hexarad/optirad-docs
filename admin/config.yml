@@ -17,21 +17,14 @@ collections:
     create: true # Allow users to create new documents in this collection
     view_groups:
       - label: Year
-        field: date
         pattern: \d{4}
       - label: Category
         field: string
     sortable_fields:
       - category
       - title
-      - date
     fields:
       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
-      - { label: 'Date', name: 'date', widget: 'datetime',
-          date_format: 'YYYY-MM-DD',
-          time_format: 'HH:mm',
-          format: 'YYYY-MM-DD HH:mm',
-        }
       - label: "Category"
         name: "category"
         widget: "relation"
