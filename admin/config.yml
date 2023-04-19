@@ -13,7 +13,7 @@ collections:
       A page of documentation that is listed under the chosen category
       and becomes its own page and url which can be linked to.
     folder: '_docs'
-    summary: '{{title}} -- {{year}}/{{month}}/{{day}} -- {{category}}'
+    summary: '{{title}} -- {{category}}'
     create: true # Allow users to create new documents in this collection
     view_groups:
       - label: Category
