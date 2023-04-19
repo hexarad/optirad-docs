@@ -3,7 +3,7 @@ email: opitrad-support@hexarad.com
 description: >-
   Opitrad, helping rediology departments put patients first.
 baseurl: "" # e.g. /blog
-url: "" # e.g. http://example.com
+url: https://optirad-docs.netlify.app
 include:
   - admin
 collections:
