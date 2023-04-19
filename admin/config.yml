@@ -16,8 +16,6 @@ collections:
     summary: '{{title}} -- {{year}}/{{month}}/{{day}} -- {{category}}'
     create: true # Allow users to create new documents in this collection
     view_groups:
-      - label: Year
-        pattern: \d{4}
       - label: Category
         field: string
     sortable_fields:
