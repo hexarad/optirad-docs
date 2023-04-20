@@ -4,10 +4,10 @@ layout: page
 
 <img src="{{ site.url }}/assets/images/hr-logo.png" style="height:60px;display: block; margin-left: auto; margin-right: auto; " >
 
-Welcome to the Optirad document site. Here you will find structured links to help
-navigate you to the documentation you require.
+Welcome to the Optirad document site. Here you will find a categorised list of documents to help
+you use the application effectively.
 
-Alternatively you can view the most recent documentation [here]({{ site.url }}/recent.html)
+Click [here]({{ site.url }}/recent.html) for the uncategorised list
 
 {% assign CATEGORIES = site.categories | sort:"order" %}
 <div>
