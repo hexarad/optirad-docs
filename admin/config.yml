@@ -3,6 +3,7 @@ backend:
   branch: main
 
 #publish_mode: editorial_workflow
+public_folder: https://optirad-docs.netlify.app/docs/assets/images/uploads
 media_folder: "assets/images/uploads"
 
 collections:
