@@ -2,8 +2,6 @@
 title: How to begin
 category: Getting Started
 ---
-![](/assets/images/uploads/dall·e-2023-01-03-12.02.36-blue-hexagon-not-being-able-to-cope.png)
-
 # Enter your reporter details
 
 Before you can use Opitrad you need to enter some data about the doctors that will appear on the roster.
