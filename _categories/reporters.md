@@ -1,4 +1,4 @@
 ---
-category_name: Roster
-order: 3
+category_name: Adding a reporter
+order: 2
 ---
