@@ -1,6 +1,6 @@
 ---
 title: OptiRad
-category: Getting Started
+category: Understand OptiRad
 ---
 OptiRad is our market leading software solution to oversee, organise, and optimise - By combining workflow management alongside business intelligence, OptiRad will make the most of your existing resources and streamline your radiology department.
 
