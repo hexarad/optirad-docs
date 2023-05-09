@@ -1,4 +1,4 @@
 ---
-category_name: Reporters
-order: 2
+category_name: Reporter Job Plans
+order: 3
 ---
