@@ -1,6 +1,6 @@
 ---
 title: How to add a reporter
-category: Adding a reporter
+category: OptiRad reporter's
 ---
 When you need to add a new reporter to OptiRad, follow Network Level > Add a new reporter. 
 
