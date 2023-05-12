@@ -1,4 +1,4 @@
 ---
-category_name: Adding a reporter
+category_name: OptiRad reporter's
 order: 2
 ---
