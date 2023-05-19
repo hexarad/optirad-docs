@@ -15,3 +15,12 @@ You will be able to edit your job plan when ever required, however, only ad admi
 If you would like to edit your current job plan, you can simply duplicate your current job plan and action any necessary changes. When editing, you can either add or delete any necessary sessions or change anything from time, day, nature, or frequency of a session. Any changes that you make to your current job plan will then automatically save in the system. At this point, an admin user or a Hexarad support provider can publish the updated job plan as required. 
 
 You can similarly choose to create an entirely new job plan. From here you can include all necessary sessions and activities. Again, this will save in the system and can be published by any admin user or Hexarad support provider.
+
+* W﻿hen creating a new job plan, the mandatory fields include:\
+  O﻿rganisation 
+* W﻿ork session
+* A﻿ctiity type
+* T﻿ime
+* Recurrence (Frequency of job plan component e.g.., weekly, bi-weekly)
+
+OptiRad can capture as much detail as required t specify what is being done in each session. Reporters often do more than one thing a given session, for example in a CT Cold Reporting Sessions, one may spend 70% of their time doing General CT and the other 30% doing Thoracic CT work. Alternatively, your job plan can also capture 'general' reporting sessions if preferred.
