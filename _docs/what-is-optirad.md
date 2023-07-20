@@ -14,7 +14,7 @@ Y﻿ou can synch your Rota to your Outlook Calendar as well. As such, you will b
 
 Once you have created your OptiRad account you will be able to see your reporter profile, job plan, and the Rota.
 
-Under View profile > Associated skills is where you will be able to see your individual reporting responsibilities. We do ask that you check these and advise to your ourselves or your administration team of any changed need to be made. These can then be made as required.
+On the left hand side, under View profile > Associated skills is where you will be able to see your individual reporting responsibilities. We do ask that you check these and advise to your ourselves or your administration team of any changed need to be made. These can then be made as required.
 
 OptiRad profiles reporters at the modality, sub-specialty, and study level. It will also capture the activity level at which you report a given sub-specialty. 
 
@@ -26,7 +26,7 @@ All available profiles options will live under 'Unassociated skills'. Here you c
 
 ## Y﻿our reporter job plan:
 
-Once you have logged in, under Job plan > you will be able to view your individual job plan. 
+Once you have logged in, on the left hand side under Job plan > you will be able to view your individual job plan. 
 
 Your job plan will have a simple weekly layout split into morning and afternoon sessions. Each component of the job plan is represented by an individual square and will include your 'Work Session' and associated activity (e.g., CT Thorax or MRI Neuro), which controls where this will be shown in your roster. The specificity of your job plan is configurable and can include as much information as desired. 
 
