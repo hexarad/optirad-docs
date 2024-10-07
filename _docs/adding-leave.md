@@ -1,9 +1,7 @@
 ---
 title: Adding Leave
-category: Reporter Leave
+category: Admin Tips
 ---
-To add reporter leave, enter into 'Leave' which you can find associated with each individual reporter. 
+You can enter into enter leave for each reporter directly from the roster (by clicking **+** within the Away row) or via the **Reporters** page, under **Network Level**. 
 
-Leave can be added or removed as required to reflect reporter availability. All leave will be immediately reflected in the E-Roster and override any job plan activities scheduled for that day. 
-
-Type and length of leave can also be captured depending on individual circumstance.
+Simply select the user you want to add leave for, the type of leave, and the length of time off required. All leave will be immediately reflected in the E-Roster, automatically removing activities scheduled for that day so you don't have to.
