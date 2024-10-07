@@ -8,4 +8,4 @@ Enter your email address and the password you set, and log in.
 
 If you forget your password, click the link at the bottom of the page to request a link to reset your password, or email Jack at [optiradsupport@hexarad.com](optiradsupport@hexarad.com).
 
-(Tip! Bookmark www.optirad.hexarad.com on your browser for quick access.)
+(Tip! Bookmark [www.optirad.hexarad.com](www.optirad.hexarad.com) on your browser for quick access.)
