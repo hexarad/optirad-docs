@@ -1,6 +1,6 @@
 ---
 title: Logging In
-category: OptiRad Access for Reporters
+category: Reporter Tips
 ---
 When logging in to OptiRad, visit the URL [www.optirad.hexarad.com](www.optirad.hexarad.com). Before entering your email address and password, you first need to select if you’re signing in as an administrator or as a reporter (otherwise the system might show the error message ‘Invalid email or password’). Choose to sign in ***as a reporter.***
 
