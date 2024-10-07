@@ -1,6 +1,6 @@
 ---
 title: Setting a Password
-category: OptiRad Access for Reporters
+category: Reporter Tips
 ---
 By now, you should have received an email from OptiRad, entitled ‘Confirmation Instructions’. This will provide you with the link you need to get started setting up a password for your account.
 
