@@ -1,4 +1,4 @@
 ---
-category_name: OptiRad Access for Reporters
+category_name: Reporter Tips
 order: 1
 ---
