@@ -1,4 +1,4 @@
 ---
-category_name: Understand OptiRad
-order: 1
+category_name: Understanding OptiRad
+order: 2
 ---
