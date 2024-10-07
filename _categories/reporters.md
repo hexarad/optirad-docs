@@ -1,4 +1,4 @@
 ---
-category_name: OptiRad reporter's
+category_name: OptiRad reporters
 order: 2
 ---
