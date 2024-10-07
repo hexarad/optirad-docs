@@ -1,5 +1,5 @@
 ---
-title: Adding On-Call
+title: Adding On Call
 category: Admin Tips
 ---
 You can use OptiRad to manage your on call roster, as far in advance as necessary. On call sessions are bespoke to your department, and can be assigned to the appropriate reporter as required. 
