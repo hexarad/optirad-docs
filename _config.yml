@@ -1,7 +1,7 @@
-title: Optirad Documentation
-email: opitrad-support@hexarad.com
+title: OptiRad Documentation
+email: optiradsupport@hexarad.com
 description: >-
-  Opitrad, helping rediology departments put patients first.
+  Opitrad, helping radiology departments put patients first.
 baseurl: "" # e.g. /blog
 url: https://optirad-docs.netlify.app
 include:
@@ -28,5 +28,5 @@ remote_theme: jekyll/minima
 theme: minima
 show_excerpts: true
 author:
-  name: Optirad Support
+  name: OptiRad Support
   email: optirad-support@hexarad.com

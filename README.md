@@ -1,7 +1,7 @@
-Optirad Docs
+OptiRad Docs
 ============
 
-Here is the source for the Optirad Documentation site:
+Here is the source for the OptiRad Documentation site:
 
 Usage
 -----

@@ -4,7 +4,7 @@ layout: page
 
 <img src="{{ site.url }}/assets/images/hr-logo.png" style="height:60px;display: block; margin-left: auto; margin-right: auto; " >
 
-Welcome to the Optirad document site. Here you will find a categorised list of documents to help
+Welcome to the OptiRad document site. Here you will find a categorised list of documents to help
 you use the application effectively.
 
 Click [here]({{ site.url }}/recent.html) for the uncategorised list

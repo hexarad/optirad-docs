@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := help
 
 help:
-	@echo Optirad documentation site commands
+	@echo OptiRad documentation site commands
 	@echo usage: make [command]
 	@echo
 	@echo commands:
